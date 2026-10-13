@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- leathers -->
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>ZWB_Leather_SiltSkin</defName>
+		<label>silt skin</label>
+		<description>Lightweight, thin animal skin. Probably harvested from a small freshwater animal. Pretty, but not very protective.</description>
+		<graphicData>
+			<color>(131,116,81)</color>
+		</graphicData>
+		<statBases>
+      <MarketValue>2.0</MarketValue>
+      <StuffPower_Armor_Sharp>0.73</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.22</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(131,116,81)</color>
+			<commonality>0.15</commonality>
+			<statFactors>
+				<MaxHitPoints>1.0</MaxHitPoints>
+				<Beauty>1.25</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>ZWB_Leather_MurkyHide</defName>
+		<label>murky hide</label>
+		<description>Tanned, dried, scraped hide from a large freshwater creature. A good tough material for making clothes and bags.</description>
+		<graphicData>
+			<color>(80,83,50)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.2</MarketValue>
+			<Flammability>0.8</Flammability>
+			<StuffPower_Armor_Sharp>1.05</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.29</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(80,83,50)</color>
+			<commonality>0.1</commonality>
+			<statFactors>
+				<Flammability>0.8</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ZWB_LoticChitin</defName>
+		<label>lotic chitin</label>
+		<description>A metallic chitin, probably harvested from a large freshwater snail or crab.</description>
+		<graphicData>
+			<texPath>ZWB_Textures/Things/Chitin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(112,105,59)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>3.4</MarketValue>
+			<Mass>0.30</Mass>
+			<StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.46</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.70</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.07</SharpDamageMultiplier>
+			<BluntDamageMultiplier>.85</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>4</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>20~30</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<stuffProps>
+			<stuffAdjective>lotic chitin</stuffAdjective>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.15</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<isAirtight>true</isAirtight>
+			<color>(112,105,59)</color>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>1.1</MaxHitPoints>
+				<Beauty>1.5</Beauty>
+				<Flammability>0.1</Flammability>
+				<MaxHitPoints>0.75</MaxHitPoints>
+				<WorkToMake>1.25</WorkToMake>
+				<WorkToBuild>1.25</WorkToBuild>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+
+	<ThingDef ParentName="ZWB_MeatBase">
+		<defName>Meat_ZWB_Awanna</defName>
+		<label>lotic fish meat</label>
+		<graphicData>
+			<texPath>ZWB_Textures/Things/LoticFishMeat</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>
+

@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "ZWB_LotusWilds/1.0.0": {
+        "dependencies": {
+          "Lib.Harmony": "3.0.0-rc.2",
+          "LibNoise": "0.2.0"
+        },
+        "runtime": {
+          "ZWB_LotusWilds.dll": {}
+        }
+      },
+      "Lib.Harmony/3.0.0-rc.2": {
+        "runtime": {
+          "lib/net10.0/0Harmony.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "LibNoise/0.2.0": {
+        "runtime": {
+          "lib/NET45/LibNoise.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZWB_LotusWilds/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lib.Harmony/3.0.0-rc.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lyxdPUBZdCD6lS7xNlf0JcQmMMGrQw+IpOIMvDwE1G/MHzVcbkFgYk6ydBhDSgErCgdhxM46szzHzjED4ptviA==",
+      "path": "lib.harmony/3.0.0-rc.2",
+      "hashPath": "lib.harmony.3.0.0-rc.2.nupkg.sha512"
+    },
+    "LibNoise/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tdYokEHB4QmTtM05X3ITNTaDv5odD+pOkzyemHBlVqLVTyfXwWl+l9qz81ZSBTGnQn0gkxgH1q5iXGwlT8GKjg==",
+      "path": "libnoise/0.2.0",
+      "hashPath": "libnoise.0.2.0.nupkg.sha512"
+    }
+  }
+}

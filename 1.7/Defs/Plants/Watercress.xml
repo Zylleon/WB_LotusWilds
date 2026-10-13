@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>ZWB_WatercressPlant</defName>
+		<label>watercress</label>
+		<description>Small clusters of edible leafy greens. Watercress is one of the oldest known leafy vegetables to be eaten by humans.</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>ZWB_Textures/Plants/Watercress</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<!-- <pathCost>12</pathCost> -->
+		<ingestible/>
+		<plant>
+			<!-- <sowMinSkill>3</sowMinSkill> -->
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<fertilityMin>0.4</fertilityMin>
+			<fertilitySensitivity>1.0</fertilitySensitivity>
+			<growDays>3.4</growDays>
+			<immatureGraphicPath>ZWB_Textures/Plants/Watercress_Immature</immatureGraphicPath>
+			<harvestYield>7</harvestYield>
+			<harvestWork>250</harvestWork>
+			<maxMeshCount>16</maxMeshCount>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>ZWB_Watercress</harvestedThingDef>
+			<harvestMinGrowth>.85</harvestMinGrowth>
+			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterWeight>320</wildClusterWeight>
+			<visualSizeRange>0.3~.5</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>ZWB_Watercress</defName>
+    <label>watercress</label>
+    <description>Crisp, crunchy vegetables with a slightly sweet taste. Can be eaten raw, but is better cooked.</description>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>ZWB_Textures/Things/Watercress</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>18</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
+

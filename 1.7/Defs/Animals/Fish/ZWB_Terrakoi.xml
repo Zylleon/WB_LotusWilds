@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>ZWB_Terrakoi</defName>
+		<label>terrakoi</label>
+		<description>Large decorative carp, adapted for land. Domesticated long ago, koi are quite friendly and surprisingly smart.</description>
+		<statBases>
+			<MoveSpeed>4.8</MoveSpeed>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>300</MarketValue>
+			<Wildness>0.05</Wildness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>ZWB_EggTerrakoiUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>ZWB_EggTerrakoiFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>6</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<body>ZWB_QuadrupedLandFish</body>
+			<herdAnimal>true</herdAnimal>
+			<!-- <maxPreyBodySize>2.1</maxPreyBodySize> -->
+			<baseBodySize>0.9</baseBodySize>
+			<baseHungerRate>0.27</baseHungerRate>
+			<baseHealthScale>0.8</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>ZWB_Leather_SiltSkin</leatherDef>
+			<trainability>Advanced</trainability>
+			<useMeatFrom>ZWB_Awanna</useMeatFrom>
+			<lifeExpectancy>12</lifeExpectancy>
+			<petness>0.5</petness>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<!-- <manhunterOnTameFailChance>0.20</manhunterOnTameFailChance> -->
+			<!-- <manhunterOnDamageChance>0.5</manhunterOnDamageChance> -->
+			<!-- <gestationPeriodDays>10</gestationPeriodDays> -->
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
+			<!-- <litterSizeCurve> -->
+				<!-- <points> -->
+					<!-- <li>(0.5, 0)</li> -->
+					<!-- <li>(1, 1)</li> -->
+					<!-- <li>(2, 1.7)</li> -->
+					<!-- <li>(2.5, 0.7)</li> -->
+					<!-- <li>(3, 0)</li> -->
+				<!-- </points> -->
+			<!-- </litterSizeCurve> -->
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.20</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.40</minAge>
+					<soundWounded>ZWB_Jesterfish_Wounded</soundWounded>
+					<soundDeath>ZWB_Jesterfish_Death</soundDeath>
+					<soundCall>ZWB_Jesterfish_Call</soundCall>
+					<soundAngry>ZWB_Jesterfish_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>PredatorSmall_Eat</soundEating>
+			<packAnimal>false</packAnimal>
+			<predator>false</predator>
+
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>11</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left flipper</label>
+				<labelNoLocation>flipper</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>ZWB_FrontLeftFlipper</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right flipper</label>
+				<labelNoLocation>flipper</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>ZWB_FrontRightFlipper</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+	</ThingDef>
+
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>ZWB_Terrakoi</defName>
+		<label>terrakoi</label>
+		<race>ZWB_Terrakoi</race>
+		<combatPower>55</combatPower>
+		<ecoSystemWeight>0.52</ecoSystemWeight>
+		<wildGroupSize>4~13</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>terrakoi fry</label>
+				<labelPlural>terrakoi fry</labelPlural>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/Terrakoi/Terrakoi</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/Terrakoi/Dessicated_Terrakoi</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/Terrakoi/Terrakoi</texPath>
+					<drawSize>1.25</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/Terrakoi/Dessicated_Terrakoi</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/Terrakoi/Terrakoi</texPath>
+					<drawSize>1.65</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/Terrakoi/Dessicated_Terrakoi</texPath>
+					<drawSize>1.65</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<alternateGraphicChance>0.95</alternateGraphicChance>
+		<alternateGraphics>
+			<li> <!-- gold with white fins -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiA</texPath>
+				<weight>0.5</weight>
+			</li>
+			<li> <!-- white with red back -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiB</texPath>
+				<weight>1.5</weight>
+			</li>
+			<li> <!-- black and orange spots -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiC</texPath>
+				<weight>1</weight>
+			</li>
+			<li> <!-- yellow -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiD</texPath>
+				<weight>1</weight>
+			</li>
+			<li> <!-- black -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiE</texPath>
+				<weight>1</weight>
+			</li>
+			<li> <!-- orange -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiF</texPath>
+				<weight>1</weight>
+			</li>
+			<li> <!-- red -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiG</texPath>
+				<weight>1</weight>
+			</li>
+			<li> <!-- white and orange -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiH</texPath>
+				<weight>2</weight>
+			</li>
+			<li> <!-- snake -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiI</texPath>
+				<weight>0.3</weight>
+			</li>
+			<li> <!-- red dot, black markings -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiJ</texPath>
+				<weight>0.8</weight>
+			</li>
+			<li> <!-- white and orange -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiK</texPath>
+				<weight>2</weight>
+			</li>
+			<li> <!-- white and yellow -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiL</texPath>
+				<weight>0.3</weight>
+			</li>
+			<li> <!-- red and black -->
+				<texPath>ZWB_Textures/Animals/Terrakoi/TerrakoiM</texPath>
+				<weight>0.5</weight>
+			</li>
+		</alternateGraphics>
+	</PawnKindDef>
+
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>ZWB_EggTerrakoiFertilized</defName>
+		<label>terrakoi egg (fert.)</label>
+		<description>A fertilized terrakoi egg. If all goes well, it should hatch into a baby terrakoi. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(184,144,66)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<!-- <uiIconScale>0.666</uiIconScale> -->
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<MarketValue>24.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.5</hatcherDaystoHatch>
+				<hatcherPawn>ZWB_Terrakoi</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>ZWB_EggTerrakoiUnfertilized</defName>
+		<label>terrakoi egg (unfert.)</label>
+		<description>An unfertilized terrakoi egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(150,114,70)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<uiIconScale>0.666</uiIconScale>
+		<statBases>
+			<MarketValue>12.0</MarketValue>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+	</ThingDef>
+
+
+
+
+</Defs>
+

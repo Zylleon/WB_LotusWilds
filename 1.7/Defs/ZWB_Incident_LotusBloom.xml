@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <ZWBCore.PlantClusterIncidentDef>
+    <defName>ZWB_Incident_LotusBloom</defName>
+    <label>giant lotus bloom</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+	<minRefireDays>35</minRefireDays>
+    <workerClass>ZWBCore.IncidentWorker_PlantCluster</workerClass>
+	<plantDef>ZWB_GiantLotusBloom</plantDef>
+	<numClusters>3~7</numClusters>
+	<countPerCluster>8~23</countPerCluster>
+	<spawnRadius>4~11</spawnRadius>
+    <baseChance>1.0</baseChance>
+    <letterLabel>Giant lotus bloom</letterLabel>
+    <letterText>Several clusters of giant lotus flowers are blooming! If you wait for the flowers to go to seed, they can be harvested for delicious, healthy seeds.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <allowedBiomes>
+      <li>ZWB_LotusWilds</li>
+    </allowedBiomes>
+  </ZWBCore.PlantClusterIncidentDef>
+  
+  
+</Defs>

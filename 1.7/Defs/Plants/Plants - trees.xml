@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<ThingDef ParentName="TreeBase">
+		<defName>ZWB_GiantLotus</defName>
+		<label>giant lotus</label>
+		<description>A giant lotus with a thick, sturdy woody stem bearing a large, broad leaf. Compared to most trees, this plant grows quickly but yeilds little usable wood.</description>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<pathCost>18</pathCost>
+		<graphicData>
+			<texPath>ZWB_Textures/Plants/GiantLotus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.1, 0.35, 0.1)</volume>
+				<offset>(0,0,-0.42)</offset>
+			</shadowData>
+		</graphicData>
+		<!-- <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth> -->
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.75</fertilitySensitivity>
+			<growDays>13</growDays>
+			<lifespanDaysPerGrowDays>7</lifespanDaysPerGrowDays>
+			<fertilityMin>0.25</fertilityMin>
+			<choppedThingDef />
+			<smashedThingDef />
+			<sowWork>3000</sowWork>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<visualSizeRange>0.5~2.4</visualSizeRange>
+			<topWindExposure>0.5</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<harvestYield>14</harvestYield>
+			<harvestWork>600</harvestWork>
+		</plant>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="TreeBase">
+		<defName>ZWB_SpindlyLotus</defName>
+		<label>spindly lotus</label>
+		<description>A tall, fast-growing plant with a woody stem and a single broad leaf. This splindly lotus grows faster than the giant lotus, but yeilds less usable wood.</description>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<pathCost>18</pathCost>
+		<graphicData>
+			<texPath>ZWB_Textures/Plants/SpindlyLotus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.07, 0.35, 0.07)</volume>
+				<offset>(0,0,-0.42)</offset>
+			</shadowData>
+		</graphicData>
+		<!-- <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth> -->
+		<ingestible/>
+		<plant>
+			<sowWork>1500</sowWork>
+			<fertilitySensitivity>0.75</fertilitySensitivity>
+			<growDays>6</growDays>
+			<lifespanDaysPerGrowDays>7</lifespanDaysPerGrowDays>
+			<fertilityMin>0.25</fertilityMin>
+			<choppedThingDef />
+			<smashedThingDef />
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<visualSizeRange>0.9~3.9</visualSizeRange>
+			<topWindExposure>0.5</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<harvestYield>8</harvestYield>
+			<harvestWork>450</harvestWork>
+		</plant>
+	</ThingDef>
+
+
+
+
+</Defs>
+

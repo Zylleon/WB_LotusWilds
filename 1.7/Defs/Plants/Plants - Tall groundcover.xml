@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<ThingDef ParentName="PlantBase">
+		<defName>ZWB_Greenflop</defName>
+		<label>greenflop</label>
+		<description>Descended from popular aquarium plants, these medium height plants have long green leaves on tall stems.</description>
+		<statBases>
+			<MaxHitPoints>110</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<pathCost>18</pathCost>
+		<graphicData>
+			<texPath>ZWB_Textures/Plants/Greenflop</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<!-- <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth> -->
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<!-- <maxMeshCount>9</maxMeshCount> -->
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<topWindExposure>0.5</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+
+
+
+
+	<ThingDef ParentName="PlantBase">
+		<defName>ZWB_Mireweed</defName>
+		<label>mireweed</label>
+		<description>A long stemmed plant with plump leaves.</description>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<pathCost>18</pathCost>
+		<graphicData>
+			<texPath>ZWB_Textures/Plants/Mireweed</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<!-- <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth> -->
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~1.4</visualSizeRange>
+			<topWindExposure>0.6</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="PlantBase">
+		<defName>ZWB_Bloodfern</defName>
+		<label>bloodfern</label>
+		<description>A plant large, broad leaves, tipped with red markings</description>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>-2</Beauty>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<pathCost>18</pathCost>
+		<graphicData>
+			<texPath>ZWB_Textures/Plants/Bloodfern</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.35~0.9</visualSizeRange>
+			<topWindExposure>0.5</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>ZWB_Arrowleaf</defName>
+		<label>arrowleaf</label>
+		<description>Tall plants with red stems and point, arrow-shaped leaves.</description>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<pathCost>18</pathCost>
+		<graphicData>
+			<texPath>ZWB_Textures/Plants/Arrowleaf</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<!-- <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth> -->
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>4</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<!-- <maxMeshCount>9</maxMeshCount> -->
+			<visualSizeRange>0.8~1.8</visualSizeRange>
+			<topWindExposure>0.6</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>	
+	
+	
+	
+	
+</Defs>
+
